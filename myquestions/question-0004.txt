@@ -1,0 +1,7 @@
+Ajuste Fino de Modelos (GridSearchCV)
+Contexto: Ya sabes entrenar un modelo, pero ahora quieres encontrar "la mejor versión" de ese modelo probando diferentes configuraciones automáticamente.
+
+Tu Misión: Escribe una función buscar_mejor_svm(X, y) que:
+1. Defina una "malla de parámetros" (param_grid) para un modelo SVC (Support Vector Classifier). Debe probar al menos dos tipos de kernel ('linear', 'rbf') y dos valores de C (1, 10).
+2. Utilice GridSearchCV con 3 cortes de validación cruzada ($k=3$) para encontrar la mejor combinación.Entrene el buscador con los datos proporcionados.
+3. Retorne un diccionario con los mejores parámetros encontrados (best_params_) y el mejor score obtenido (best_score_).
