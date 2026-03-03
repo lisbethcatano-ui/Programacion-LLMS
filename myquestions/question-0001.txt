@@ -1,1 +1,11 @@
+El Problema: Optimización de un Clasificador de Calidad de Vino
 
+Imagina que tienes un conjunto de datos sobre la composición química de diferentes vinos y su calidad (buena/mala). El dataset tiene muchas columnas, pero sospechas que algunas son puro "ruido" y están afectando el rendimiento de tu modelo.
+
+Tu Misión:
+1. Escribe una función llamada optimizar_y_entrenar(df, target_col, k_best=5) que realice lo siguiente:
+2. Separación: Divide el DataFrame en características ($X$) y objetivo ($y$).
+3. Limpieza: Rellena los valores faltantes usando la mediana (usando SimpleImputer).
+4. Selección de Características: Utiliza SelectKBest con la métrica f_classif para seleccionar solo las $k$ mejores características.
+5. Modelado: Entrena un modelo de Bosques Aleatorios (RandomForestClassifier) usando solo las características seleccionadas.
+6. Retorno: La función debe devolver el modelo entrenado, la lista de los nombres de las columnas seleccionadas y el score de precisión (accuracy) inicial del modelo.
