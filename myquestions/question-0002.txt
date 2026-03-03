@@ -1,0 +1,9 @@
+El Problema de la "Maldición de la Dimensionalidad" (PCA)
+Contexto: Tienes un dataset con 50 sensores de una fábrica. Muchas señales están correlacionadas y el modelo de clasificación es muy lento. Necesitas comprimir la información sin perder la esencia.
+
+Tu Misión: Crea una función reducir_y_clasificar(X, y, varianza_deseada=0.95) que:
+
+1. Use StandardScaler para normalizar los datos (paso obligatorio para PCA).
+2. Aplique PCA (Principal Component Analysis) para reducir las columnas a aquellas que expliquen el % de la varianza indicado en el parámetro.
+3. Entrene un KNeighborsClassifier con los componentes obtenidos.
+4. Retorne el número de componentes finales seleccionados y el modelo entrenado.
