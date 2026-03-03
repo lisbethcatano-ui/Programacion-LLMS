@@ -1,0 +1,10 @@
+Segmentación de Clientes sin Etiquetas (K-Means)
+Contexto: Un e-commerce tiene datos de "Gasto Total" y "Frecuencia de Compra", pero no sabe quiénes son sus clientes VIP y quiénes los ocasionales. Al ser aprendizaje no supervisado, no hay una columna target.
+
+Tu Misión: Desarrolla una función segmentar_clientes(df, n_clusters=3) que:
+
+1. Extraiga las columnas numéricas del DataFrame.
+2. Use SimpleImputer con la estrategia constant (valor 0) para los datos faltantes.
+3. Aplique el algoritmo K-Means.
+4. Añada una nueva columna al DataFrame original llamada 'segmento_id' con las etiquetas generadas.
+5. Retorne el DataFrame modificado y las coordenadas de los centroides de cada grupo (usando cluster_centers_ de sklearn).
