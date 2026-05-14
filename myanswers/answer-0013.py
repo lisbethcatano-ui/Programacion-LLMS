@@ -1,3 +1,7 @@
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import StandardScaler
+
+
 def preparar_datos(df, target_col):
     """
     Separa las características de la etiqueta, imputa valores faltantes 
